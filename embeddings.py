@@ -22,7 +22,7 @@ directory = 'data'
 
 def doc_preprocessing(directory):
     loader = DirectoryLoader(directory)
-    docs = loader.load(directory)
+    docs = loader.load()
     text_splitter = CharacterTextSplitter(
         chunk_size=1000, 
         chunk_overlap=0
