@@ -45,6 +45,6 @@ def embedding_db():
     doc_db = Pinecone.from_documents(
         docs_split, 
         embeddings, 
-        index_name='index-dp'
+        index_name='mojix-index'
     )
     return doc_db
