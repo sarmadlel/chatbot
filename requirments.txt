@@ -1,5 +1,5 @@
 python-dotenv
-langchain
+langchain==0.0.291
 openai
 pinecone-client
 unstructured
