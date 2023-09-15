@@ -21,12 +21,8 @@ os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
 directory = 'data'
 
 def doc_preprocessing(directory):
-    loader = DirectoryLoader(
-        directory,
-        glob='**/*.pdf',     # only the PDFs
-        show_progress=True
-    )
-    docs = loader.load()
+    loader = DirectoryLoader(directory)
+    docs = loader.load(directory)
     text_splitter = CharacterTextSplitter(
         chunk_size=1000, 
         chunk_overlap=0
