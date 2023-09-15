@@ -38,7 +38,7 @@ def embedding_db():
         api_key=PINECONE_API_KEY,
         environment=PINECONE_ENV
     )
-    docs_split = doc_preprocessing()
+    docs_split = doc_preprocessing(directory)
     doc_db = Pinecone.from_documents(
         docs_split, 
         embeddings, 
