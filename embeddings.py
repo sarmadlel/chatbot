@@ -18,10 +18,11 @@ OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
 
+directory = 'data'
 
-def doc_preprocessing():
+def doc_preprocessing(directory):
     loader = DirectoryLoader(
-        'C:/Users/HF/Documents/Data Pilot/New Project/data',
+        directory,
         glob='**/*.pdf',     # only the PDFs
         show_progress=True
     )
