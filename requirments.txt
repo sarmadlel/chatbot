@@ -5,5 +5,5 @@ pinecone-client
 unstructured
 tabulate
 pdf2image
-streamlit
+streamlit==1.24.0
 tiktoken
